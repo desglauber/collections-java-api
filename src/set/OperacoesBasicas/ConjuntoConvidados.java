@@ -4,6 +4,23 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class ConjuntoConvidados {
+
+    public static void main(String[] args) {
+        ConjuntoConvidados conjuntoConvidados = new ConjuntoConvidados();
+        System.out.println("Existem " + conjuntoConvidados.contarConvidados() + " convidado(s) dentro do Set de Convidados.");
+
+        conjuntoConvidados.adicionarConvidado("Convidado 1", 1);
+        conjuntoConvidados.adicionarConvidado("Convidado 1", 1);
+        conjuntoConvidados.adicionarConvidado("Convidado 1", 1);
+        conjuntoConvidados.adicionarConvidado("Convidado 1", 1);
+        System.out.println("Existem " + conjuntoConvidados.contarConvidados() + " convidado(s) dentro do Set de Convidados.");
+
+        conjuntoConvidados.removerConvidadoPorCodigoConvite(1);
+        System.out.println("Existem " + conjuntoConvidados.contarConvidados() + " convidado(s) dentro do Set de Convidados.");
+
+        conjuntoConvidados.exibirConvidados();
+    }
+
     //atributo
 
     private Set<Convidado> convidadosSet;
@@ -25,6 +42,7 @@ public class ConjuntoConvidados {
             }
         }
 
+        System.out.println("Foi removido o convidado com o convite nº " + convidadoParaRemover);
         convidadosSet.remove(convidadoParaRemover);
     }
 
