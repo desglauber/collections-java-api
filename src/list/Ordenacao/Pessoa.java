@@ -1,9 +1,6 @@
 package list.Ordenacao;
 
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Comparator;
-import java.util.List;
 
 public class Pessoa implements Comparable<Pessoa>{
     private String nome;
@@ -49,15 +46,15 @@ public class Pessoa implements Comparable<Pessoa>{
     public int compareTo(Pessoa p) {
         // TODO Auto-generated method stub
         return Integer.compare(idade, p.getIdade());
-    }
+    }    
+}
 
-    class ComparetorPorAltura implements Comparator<Pessoa> {
+class ComparetorPorAltura implements Comparator<Pessoa> {
 
-        @Override
-        public int compare(Pessoa p1, Pessoa p2) {
-            // TODO Auto-generated method stub
-            return Double.compare(p1.getAltura(), p2.getAltura());
-        }
-        
+    @Override
+    public int compare(Pessoa p1, Pessoa p2) {
+        // TODO Auto-generated method stub
+        return Double.compare(p1.getAltura(), p2.getAltura());
     }
+    
 }

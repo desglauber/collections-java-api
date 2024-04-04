@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import list.Ordenacao.Pessoa.ComparetorPorAltura;
-
 public class OrdenacaoPessoas {
     //atributos
 
