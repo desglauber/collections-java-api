@@ -37,7 +37,7 @@ public class Contato {
 
     @Override
     public String toString() {
-        return "Contato [nome=" + nome + ", numero=" + numero + "]";
+        return "Nome= " + nome + ", Número=" + numero;
     }
 
     public void setNome(String nome) {

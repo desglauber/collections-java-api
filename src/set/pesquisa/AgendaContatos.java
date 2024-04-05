@@ -6,7 +6,22 @@ import java.util.Set;
 public class AgendaContatos {
 
     public static void main(String[] args) {
-        
+        AgendaContatos agendaContatos = new AgendaContatos();
+
+        agendaContatos.exibirContatos();
+
+        agendaContatos.adicionarContato("Glauber", 1234);
+        agendaContatos.adicionarContato("Glauber", 4321);
+        agendaContatos.adicionarContato("Glauber Farias", 2468);
+        agendaContatos.adicionarContato("Glauber DIO", 8642);
+        agendaContatos.adicionarContato("Douglas Oliver", 1020);
+
+        agendaContatos.exibirContatos();
+
+        System.out.println(agendaContatos.pesquisarPorNome("Glauber"));
+        System.out.println("Contato atualizado: " + agendaContatos.atualizarNumeroContato("Douglas Oliver", 3020));
+
+        agendaContatos.exibirContatos();
     }
 
     //atributos
