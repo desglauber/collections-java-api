@@ -10,9 +10,9 @@ public class ConjuntoConvidados {
         System.out.println("Existem " + conjuntoConvidados.contarConvidados() + " convidado(s) dentro do Set de Convidados.");
 
         conjuntoConvidados.adicionarConvidado("Convidado 1", 1);
-        conjuntoConvidados.adicionarConvidado("Convidado 1", 1);
-        conjuntoConvidados.adicionarConvidado("Convidado 1", 1);
-        conjuntoConvidados.adicionarConvidado("Convidado 1", 1);
+        conjuntoConvidados.adicionarConvidado("Convidado 2", 2);
+        conjuntoConvidados.adicionarConvidado("Convidado 3", 2);
+        conjuntoConvidados.adicionarConvidado("Convidado 4", 4);
         System.out.println("Existem " + conjuntoConvidados.contarConvidados() + " convidado(s) dentro do Set de Convidados.");
 
         conjuntoConvidados.removerConvidadoPorCodigoConvite(1);

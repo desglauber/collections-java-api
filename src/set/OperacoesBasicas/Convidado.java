@@ -19,4 +19,6 @@ public class Convidado {
     public String toString() {
         return "Convidados [nome=" + nome + ", codigoConvite=" + codigoConvite + "]";
     }
+
+    
 }
